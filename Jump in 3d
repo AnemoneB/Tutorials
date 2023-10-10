@@ -1,0 +1,24 @@
+# code on how to make 3d character jump
+
+# 1. make a new scene 
+
+in the hierachy right-click add 3 3d objects: a 3d plane,a cube and a capsule 
+
+in the project right-click to create a new folder called scripts and open it up
+
+double-click the folder and right-click again and create a c# script and immediately name it 'PlayerMovement' (if you dont name it straight away it will automatically name the code'NewBehaviour' as well as setting the class to the name causing problems with the 
+programa ability to be recognise the code)
+
+#2. creating the code 
+
+in the hierachy right-click add 3 3d objects: a 3d plane,a cube and a capsule 
+
+click onto the cube look at the inspector and scroll all the way to the bottom and add component 'rigidbody' 
+
+in the project right-click to create a new folder called scripts and open it up
+
+double-click the folder and right-click again and create a c# script and immediately name it 'PlayerMovement' (if you dont name it straight away it will automatically name the code'NewBehaviour' as well as setting the class to the name causing problems with the 
+programa ability to be recognise the code)
+
+
+
