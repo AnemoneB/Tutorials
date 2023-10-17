@@ -17,21 +17,21 @@ double-clich the 'PLayerMovement' script and it will automatically open the scri
 
 first you need to create 3 floats one for speed of movement,one for horizontal movements and one for forward and backwards movements
 
-public float speed = 5.0f; <--- this one is made public so that we can manually change it from unity instead of having to go backwards and forwards from VS and unity
-private float HorizontalInput;
-private float ForwardInput;
+    public float speed = 5.0f; <--- this one is made public so that we can manually change it from unity instead of having to go backwards and forwards from VS and unity
+    private float HorizontalInput;
+    private float ForwardInput;
 
 (note a float is used by the engine to store floating point number values, these being mom-fixed numbers that chaged based on the rest of the code)
 
 under void update firstly we need to define what the float do by telling them that when inputting a direction on the keyboard 
 
- HorizontalInput = Input.GetAxis("Horizontal");
- ForwardInput = Input.GetAxis("Vertical");
+    HorizontalInput = Input.GetAxis("Horizontal");
+    ForwardInput = Input.GetAxis("Vertical");
 
 (make sure to go back into unity and under edit->project settings-> input manager check out that the imputs are according to what keys you what to used aka wsda or arrow keys)
 
- transform.Translate(Vector3.forward * Time.deltaTime * speed * ForwardInput);
- transform.Translate(Vector3.right * Time.deltaTime * speed * HorizontalInput);
+    transform.Translate(Vector3.forward * Time.deltaTime * speed * ForwardInput);
+    transform.Translate(Vector3.right * Time.deltaTime * speed * HorizontalInput);
 
 most of this code is self explanatory
 transform = change physical attributes
